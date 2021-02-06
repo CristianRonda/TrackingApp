@@ -11,7 +11,7 @@ const HomeLayout = ({children}) => {
           {children}
         </Box>
       </KeyboardAwareScrollView>
-      <Logo white={false} />
+      {/* <Logo white={false} /> */}
     </SafeAreaView>
   );
 };

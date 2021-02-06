@@ -98,7 +98,7 @@ const Details = ({data, title}) => {
             height: undefined,
           }}
         />
-        <Logo />
+        {/* <Logo /> */}
         <Box pt="xl" flexDirection="row" justifyContent="space-between">
           <Box>
             <Text variant="body" color="white" fontWeight="300">

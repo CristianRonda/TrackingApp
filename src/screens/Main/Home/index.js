@@ -41,8 +41,8 @@ const Home = () => {
   const onSave = () => {
     if (!_.isEmpty(history)) {
       saveLocation({history, distance, time: {minutes, seconds, hours}});
+      return onStop();
     }
-    onStop();
     Alert.alert(
       'Alerta',
       'Los datos no son suficientes para guardar la sesion',

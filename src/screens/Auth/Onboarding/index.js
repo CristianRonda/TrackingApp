@@ -37,7 +37,7 @@ const Onboarding = () => {
           onPress={() => navigate('Login')}
         />
       </Box>
-      <Logo />
+      {/* <Logo /> */}
     </Box>
   );
 };
