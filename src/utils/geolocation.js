@@ -12,8 +12,8 @@ export const getDistanceFromLatLonInKm = ({
     Math.cos(deg2Rad(lastLatitude)) *
       Math.cos(deg2Rad(currentLatitude)) *
       Math.sin(dLon / 2) *
-      Math.sin(dLon * 2);
-  const c = 2 * Math.atan(Math.sqrt(a), Math.sqrt(1 - a));
+      Math.sin(dLon / 2);
+  const c = 2 * Math.asin(Math.sqrt(a));
 
   return Number(RADIO * c);
 };
